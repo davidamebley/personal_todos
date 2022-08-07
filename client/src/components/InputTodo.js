@@ -4,6 +4,7 @@ const InputTodo = () => {
   const [description, setDescription] = useState("");
   const onSubmitForm = async e =>{
     e.preventDefault();
+    // alert("Enter your todo description");
     try {
       const body = {description};
       const response = await fetch("http://localhost:5000/todos",{
